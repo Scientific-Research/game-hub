@@ -13,7 +13,7 @@ const GameCard = ({ game }: IProps) => {
 			<Image src={game.background_image} />
 			<CardBody>
 				<Heading fontSize="2xl">{game.name}</Heading>
-				<HStack>
+				<HStack justifyContent="space-between">
 					<PlatformIconList
 						platforms={game.parent_platforms.map((p) => p.platform)}
 					/>
