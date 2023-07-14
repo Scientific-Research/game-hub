@@ -4,5 +4,9 @@ interface Props {
 	score: number;
 }
 export const CriticScore = ({ score }: Props) => {
-	return <Badge>{score}</Badge>;
+	return (
+		<Badge fontSize="14px" paddingX={2}>
+			{score}
+		</Badge>
+	);
 };
