@@ -3,7 +3,8 @@ import { BsChevronDown } from 'react-icons/bs';
 import usePlatforms from '../hooks/usePlatforms';
 
 export const PlatformSelector = () => {
-	const { data } = usePlatforms();
+	const { data, error } = usePlatforms();
+	if (error) return <p>ERROR! try it again later.</p>;
 	return (
 		<Menu>
 			<MenuButton as={Button} rightIcon={<BsChevronDown />}>
