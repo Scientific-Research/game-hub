@@ -26,7 +26,11 @@ export const GenreList = () => {
 							borderRadius={8}
 							src={getCroppedImageUrl(genre.image_background)}
 						/>
-						<Button fontSize="lg" variant="link">
+						<Button
+							fontSize="lg"
+							variant="link"
+							onClick={() => console.log(`You clicked ${genre.name}`)}
+						>
 							{genre.name}
 						</Button>
 					</HStack>
