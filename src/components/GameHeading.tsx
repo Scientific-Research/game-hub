@@ -30,7 +30,7 @@ const GameHeading = ({ gameQuery }: Props) => {
 		gameQuery.genre?.name !== undefined
 	) {
 		heading =
-			gameQuery.genre?.name + ' ' + gameQuery.platform?.name + ' Game';
+			gameQuery.platform?.name + ' ' + gameQuery.genre?.name + ' Game';
 	} else {
 		heading = 'Game';
 	}
